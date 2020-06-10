@@ -1,6 +1,6 @@
 import '../css/styles.scss';
 
-const renderNav = () => {
+const renderStatic = () => {
   const header = document.createElement('header');
   const nav = document.createElement('nav');
   const logo = document.createElement('div');
@@ -9,8 +9,10 @@ const renderNav = () => {
   const linkList = document.createElement('div');
   const links = ['Menu', 'About', 'Contact'];
   const ulList = document.createElement('ul');
+  const main = document.createElement('main');
 
   ulList.classList.add('list', 'd-flex');
+  main.classList.add('container', 'd-flex', 'flex-column', 'justify-content-end');
 
   links.forEach(link => {
     const tempLi = document.createElement('li');
@@ -39,13 +41,14 @@ const renderNav = () => {
   nav.appendChild(linkList);
   header.appendChild(nav);
   document.body.appendChild(header);
+  document.body.appendChild(main);
 };
 
 const page = () => {
   const main = document.createElement('div');
   main.setAttribute('id', 'main-wrapper');
   document.body.appendChild(main);
-  renderNav();
+  renderStatic();
 };
 
 
