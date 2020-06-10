@@ -8,7 +8,7 @@ module.exports = {
   },
   output: {
     filename: 'js/[name].bundle.js',
-    path: path.join(__dirname, '/dist')
+    path: path.resolve(__dirname, 'dist')
   },
   module: {
     rules: [
@@ -22,7 +22,8 @@ module.exports = {
         loader: [
           MiniCSSExtractPlugin.loader,
           'css-loader'
-        ]
+        ],
+        exclude: /node_modules/
       },
       {
         test: /\.scss$/,
@@ -30,15 +31,18 @@ module.exports = {
           MiniCSSExtractPlugin.loader,
           'css-loader',
           'sass-loader'
-        ]
+        ],
+        exclude: /node_modules/
       },
       {
         test: /\.png/,
-        use: 'file-loader'
+        use: 'file-loader',
+        exclude: /node_modules/
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: 'file-loader'
+        use: 'file-loader',
+        exclude: /node_modules/
       }
     ]
   },
