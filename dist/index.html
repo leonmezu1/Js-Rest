@@ -8,13 +8,102 @@
     <meta http-equiv="Content-Type">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lobster&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,400;0,500;1,400;1,500&amp;display=swap">
     <title>Document</title>
   </head>
   <body>
-    <main>
-      <h1 class="title">Welcome to Leonardo's restaurant</h1>
-      <h2>Another stuff</h2>
-      <h3>Last change again!</h3>
+    <div class="blur" id="main-wrapper"></div>
+    <header>
+      <nav class="navigation d-flex justify-content-around align-items-center shadow-text">
+        <div class="logo">
+          <h3><a class="rest-title" href="#">El tenedor</a></h3>
+        </div>
+        <div class="links-list">
+          <ul class="list d-flex flex-row">
+            <li class="list-element"><a class="list-link" href="#">Menu</a></li>
+            <li class="list-element"><a class="list-link" href="#">About</a></li>
+            <li class="list-element"><a class="list-link" href="#">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="container d-flex flex-column justify-content-end">
+      <div class="banner d-flex align-items-center justify-content-around">
+        <h1 class="slogan shadow-text-slim text-left">Colombian food made with love!</h1>
+        <div class="btn btn-lg px-3 py-2 shadow-text-slim shadow-lg" id="menu-btn">See our menu</div>
+      </div>
+      <div class="specialities">
+        <h2 class="rest-title shadow-text">House Specialities</h2>
+        <div class="menu-container">
+          <div class="menu-item">
+            <div class="card shadow-sm"><img class="card-img-top img-fluid" src="/dist/assets/images/churrasco.jpg" alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">Churrasco a la parrilla</h5>
+                <p class="card-text p-2">Marinated skirt steak, coal cooked, juicy selected beef.</p>
+                <p class="card-text font-weight-bold">$15.5</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="card shadow-sm"><img class="card-img-top img-fluid" src="/dist/assets/images/Arroz-mar-y-tierra.jpg" alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">Churrasco a la parrilla</h5>
+                <p class="card-text p-2">Marinated skirt steak, coal cooked, juicy selected beef.</p>
+                <p class="card-text font-weight-bold">$15.5</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="card shadow-sm"><img class="card-img-top img-fluid" src="/dist/assets/images/New-York-Al-Carbon.jpg" alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">Churrasco a la parrilla</h5>
+                <p class="card-text p-2">Marinated skirt steak, coal cooked, juicy selected beef.</p>
+                <p class="card-text font-weight-bold">$15.5</p>
+              </div>
+            </div>
+          </div>
+          <div class="menu-item">
+            <div class="card shadow-sm"><img class="card-img-top img-fluid" src="/dist/assets/images/cazuela-paisa.jpg" alt="Card image cap">
+              <div class="card-body text-center">
+                <h5 class="card-title">Churrasco a la parrilla</h5>
+                <p class="card-text p-2">Marinated skirt steak, coal cooked, juicy selected beef.</p>
+                <p class="card-text font-weight-bold">$15.5</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <contact>
+        <div class="contact-container d-flex justify-content-between">
+          <div class="left-contact rounded-lg bg-white">
+            <h2>Opening Hours</h2>
+            <p class="contact-text">Monday ~ Saturday: 8:00 am ~ 11:00 pm</p>
+            <h2>Reservations</h2>
+            <p class="contact-text">(012)-345-6789</p>
+            <h2>Adress</h2>
+            <p class="contact-text">123 Restaurant Ave, Flavor Town, Traditional 80085, Awesome Country</p>
+          </div>
+          <div class="right-contact rounded bg-white">
+            <h2>Contact us</h2>
+            <form>
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input class="form-control" type="text" aria-describedby="name" placeholder="Your name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input class="form-control" type="email" placeholder="Your email">
+              </div>
+              <div class="form-group">
+                <label for="subject">Message</label>
+                <textarea class="form-control" name="Message" cols="30" rows="4" placeholder="Your Message"></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </contact>
     </main>
     <footer></footer>
   </body>
