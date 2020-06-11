@@ -31,17 +31,17 @@ module.exports = {
       },
       {
         test: /\.png/,
-        use: 'file-loader',
+        use: 'file-loader?name=[name].[ext]&outputPath=./images/',
         exclude: /node_modules/,
       },
       {
         test: /\.jpg/,
-        use: 'file-loader',
+        use: 'file-loader?name=[name].[ext]&outputPath=./images/',
         exclude: /node_modules/,
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: 'file-loader',
+        use: 'file-loader?name=[name].[ext]&outputPath=./images/',
         exclude: /node_modules/,
       },
     ],
