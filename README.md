@@ -8,20 +8,22 @@ Single page website to showcase a restaurant's products and services.
 ## Js-Rest [Live Link](https://eltenedor.netlify.app/#)
 
 ## Usage
+
 > Clone the repository to your local machine using ssh:
 
-```
+```bash
 git clone [git@github.com:rOluochKe/JS-TicTacToe.git](https://github.com/leonmezu1/Js-Rest.git)
 ```
 
 > Clone the repository to your local machine using https:
 
-```
+```bash
 git clone [git@github.com:rOluochKe/JS-TicTacToe.git](https://github.com/leonmezu1/Js-Rest.git)
 ```
+
 > cd into the directory
 
-```
+```bash
 cd Js-Rest
 ```
 
