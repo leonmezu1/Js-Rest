@@ -84,6 +84,7 @@ const renderMenu = () => {
     cardDescription.classList.add('card-text', 'p-2');
     cardPrice.classList.add('card-text', 'font-weight-bold');
     img.classList.add('card-img-top', 'img-fluid');
+    img.setAttribute('loading', 'lazy');
 
     img.setAttribute('alt', dish.title);
     img.src = menuArray[index];
